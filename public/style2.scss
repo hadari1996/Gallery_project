@@ -142,7 +142,7 @@ nav{
 
 
 body {
-	background: rgba(211, 183, 112, 0.413);
+  background:#b4b4b8;	
 
     
     .container_img {
@@ -151,7 +151,7 @@ body {
         justify-content: center;
         min-height: 100vh;
          &_screen_img {		
-            background: linear-gradient(90deg, #60602e, #b4b4b8);		
+          background: linear-gradient(90deg, #a3a35e, #b4b4b8);	;	
             position: relative;	
            height:600px;
             width: 390px;	
@@ -222,8 +222,8 @@ body {
                   display: flex;
                   align-items: center;
                   width: 90%;
-                  color: #4C489D;
-                  box-shadow: 0px 2px 2px #5C5696;
+                  color:#3b3b30;
+                  box-shadow: 0px 2px 2px #3b3b30;
                   cursor: pointer;
                   transition: .2s;
               }
@@ -231,7 +231,7 @@ body {
               &_submit :active,
               &_submit :focus,
               &_submit :hover {
-                  border-color: #6A679E;
+                  border-color: #3b3b30;
                   outline: none;
               }
               .root{display: flex;
