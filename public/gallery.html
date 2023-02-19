@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js"
+    integrity="sha512-rozBdNtS7jw9BlC76YF1FQGjz17qQ0J/Vu9ZCFIW374sEy4EZRbRcUZa2RU/MZ90X2mnLU56F75VfdToGV0RiA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="./dist/style2.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Home</title>
+</head>
+<body onload="getUserFromCookie()">
+
+          <nav>
+            <span class="material-symbols-outlined" onclick="handleLogout()">
+              logout
+              </span>
+            <a href="./gallery.html"><img id="logo" src="./imges/photologo.png" alt="logo"/></a>
+            <img class="connections" src="./imges/whatsup_icon.png"/>
+            <img class="connections" src="./imges/instagram.png"/>
+            <img class="connections" src="./imges/facebook_logo.png"/>
+            <ul>
+                <li><a  onclick="handleAddImgPage()">הוסף תמונות</a></li>
+                <li><a onclick="handelgetAllImages()">כל התמונות</a>
+                    <ul>
+                        <li id="top"><a href="#">צילומי  חוץ</a></li>
+                        <li><a href="#">צילומי סטודיו</a></li>
+                        <li id="buttom"><a href="#">אלבומים</a></li>
+                      </ul>
+                
+                </li>
+                <li><a onclick="handelgetUserImages()"> כל התמונות שלך</a></li>
+                <li><a onclick="handelupdateUserImages()">עדכן את התמונה </a></li>            
+            </ul>
+    
+        </nav>
+     
+        
+          <div class="root1"> </div>
+
+    <script src="./dist/app.js"></script>  
+</body>
+</html>

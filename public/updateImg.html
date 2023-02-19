@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js"
+    integrity="sha512-rozBdNtS7jw9BlC76YF1FQGjz17qQ0J/Vu9ZCFIW374sEy4EZRbRcUZa2RU/MZ90X2mnLU56F75VfdToGV0RiA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="./dist/style2.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="getUserFromCookie()">
+    <nav>
+        <span class="material-symbols-outlined" onclick="handleLogout()">
+            logout
+            </span>
+        <a href="./gallery.html"><img id="logo" src="./imges/photologo.png" alt="logo"/></a>
+        <img class="connections" src="./imges/whatsup_icon.png"/>
+        <img class="connections" src="./imges/instagram.png"/>
+        <img class="connections" src="./imges/facebook_logo.png"/>
+         <link href="./dist/style2.css" rel="stylesheet"/>
+        <ul>
+            <li><a href="#"> עדכון תמונה</a></li>
+      
+        </ul>
+
+    </nav>
+
+    <div class="container_img">
+        <div class="container_img_screen_img">
+            <div class="container_img_screen_img_content">
+                <h1 class="container_img_screen_img_content__header">עדכן תמונה</h1>
+                <form class="container_img_screen_img_content__form" onsubmit="handleUpdateImg(event)">
+                    <div class="container_img_screen_img_content__form_field">
+                         <input oninput="handleSearch(event)" class="container_img_screen_img_content__form_field_input" type="text" id="alt" placeholder="enter alt" required>
+                    </div>
+                    <div class="root">
+                       </div>
+                    <div class="container_img_screen_img_content__form_field">
+                    <input class="container_img_screen_img_content__form_field_input" id="src" placeholder="enter src" required>
+                    </div>
+                
+                    <button class="container_img_screen_img_content__form_submit" type="submit">עדכן</button>
+   
+                </form>
+
+    <div class="error__message_div">
+        <label class="error__message" ></label>
+    </div>
+            </div>
+     
+     </div>
+</div>  
+
+
+    
+    <script src="./dist/app.js"></script>  
+</body>
+</html>
